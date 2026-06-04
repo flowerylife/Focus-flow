@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>FocusFlow - Stay Locked In</title>
+  <link rel="stylesheet" href="style.css"/>
+</head>
+<body>
+
+  <header>
+    <h1>FocusFlow</h1>
+    <p>Stop distractions. Start focusing.</p>
+    <button onclick="scrollToApp()">Start Focusing</button>
+  </header>
+
+  <section class="problem">
+    <h2>The Problem</h2>
+    <p>Students lose hours daily to distractions like social media, overthinking, and poor planning.</p>
+  </section>
+
+  <section class="app" id="app">
+    <h2>Your Focus Session</h2>
+
+    <input type="text" id="task" placeholder="Enter your focus task..." />
+
+    <div class="timer">
+      <h3 id="time">25:00</h3>
+      <button onclick="startTimer()">Start</button>
+      <button onclick="resetTimer()">Reset</button>
+    </div>
+
+    <p id="sessionCount">Sessions completed: 0</p>
+  </section>
+
+  <footer>
+    <p>Built for focus. Built for success.</p>
+  </footer>
+
+  <script src="script.js"></script>
+</body>
+</html>
